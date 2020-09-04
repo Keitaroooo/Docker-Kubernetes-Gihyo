@@ -8,11 +8,11 @@ services:
       placement:
         constraints: [node.role != manager]
     environment:
-      MYSQL_ROOT_PASSWORD: gihyo 
-      MYSQL_DATABASE: tododb 
-      MYSQL_USER: gihyo 
-      MYSQL_PASSWORD: gihyo 
-      MYSQL_MASTER: "true" 
+      MYSQL_ROOT_PASSWORD: gihyo
+      MYSQL_DATABASE: tododb
+      MYSQL_USER: gihyo
+      MYSQL_PASSWORD: gihyo
+      MYSQL_MASTER: "true"
     networks:
       - todoapp
 
@@ -26,12 +26,12 @@ services:
       - master
     environment:
       MYSQL_MASTER_HOST: master
-      MYSQL_ROOT_PASSWORD: gihyo 
-      MYSQL_DATABASE: tododb 
-      MYSQL_USER: gihyo 
-      MYSQL_PASSWORD: gihyo 
-      MYSQL_REPL_USER: repl 
-      MYSQL_REPL_PASSWORD: gihyo 
+      MYSQL_ROOT_PASSWORD: gihyo
+      MYSQL_DATABASE: tododb
+      MYSQL_USER: gihyo
+      MYSQL_PASSWORD: gihyo
+      MYSQL_REPL_USER: repl
+      MYSQL_REPL_PASSWORD: gihyo
     networks:
       - todoapp
 
